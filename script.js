@@ -27,8 +27,9 @@ function rollAll() {
     // },4000);
     Promise
     .all([...reelsList].map((reel,i) => roll(reel,i)))
-    .then((delta)=> {
-        console.log(delta)
+    .then((deltas)=> {
+        deltas.forEach((delta,i)=>indexes[i] =(indexes[i] + delta)%numIcons);
+        console.log(indexes)
         document.querySelector('.roll').disabled=false;
     })
     // [...reelsList].map((reel , i )=> {

@@ -25,11 +25,11 @@ body{
 
 .slots {
     margin: auto;
-    width: calc(3.5*var(--icon-width));
+    width: calc(3.25*var(--icon-width));
     height: calc(3*var(--icon-height));
     border: 3px solid black;
     display: flex;
-    padding:calc(0.3*var(--icon-width));
+    padding:calc(0.1*var(--icon-width));
     justify-content: space-between;
 }
 .reel{
