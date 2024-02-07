@@ -2,8 +2,7 @@ const iconWidth = 79,
  iconHeight = 79,
  numIcons = 9,
  time_per_icon = 100,
- indexes = [ 0 , 0 , 0],
- nameIndex =["Banana" , "Seven", "Cherry", "Berry", "Orange", "Bell","Bar", "Lemon", "Watermelon"];
+ indexes = [ 0 , 0 , 0];
 
 const roll = (reel , offset = 0) => {
 const delta = (offset + 2 )* numIcons + Math.round(Math.random()* numIcons) ;
@@ -30,7 +29,7 @@ function rollAll() {
     .all([...reelsList].map((reel,i) => roll(reel,i)))
     .then((deltas)=> {
         deltas.forEach((delta,i)=>indexes[i] =(indexes[i] + delta)%numIcons);
-        indexes.map((index) => {console.log(nameIndex[index],indexes)})
+        console.log(indexes)
         document.querySelector('.roll').disabled=false;
     })
     // [...reelsList].map((reel , i )=> {
