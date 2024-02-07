@@ -37,7 +37,7 @@ body{
 
 }
 .slots {
-    margin:50% auto auto auto;
+    margin:65% auto auto auto;
     width: calc(3.1*var(--icon-width));
     height: calc(3*var(--icon-height));
     border:3px solid transparent;
