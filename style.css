@@ -37,7 +37,7 @@ body{
 
 }
 .slots {
-    margin:90% auto auto auto;
+    margin:400px auto auto auto;
     width: calc(3.1*var(--icon-width));
     height: calc(3*var(--icon-height));
     border:3px solid transparent;
@@ -45,17 +45,39 @@ body{
     padding:calc(0.1*var(--icon-width));
     justify-content: space-between;
     position: relative;
+    
+}
+.slots-pre{
+    border: 2px solid #FFD655;
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+}
+.slots-post{
+    content: '';
+    position: absolute;
+    width:94%;
+    height: 94%;
+    border: 2px solid #FFD655;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    z-index: 100;
 }
 .slots::before{
     position: absolute;
     content: '';
-    width: 96.5%;
-    height: 97%;
-border: 8px dotted #FFD655;
-border-radius: 57px;
+    width: 97%;
+    height: 97.5%;
+border: 7px dotted #FFD655;
+border-radius: 40px;
 opacity: 1;
 filter: blur(1px);
-
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -65,9 +87,9 @@ filter: blur(1px);
     position: absolute;
     content: '';
     width: 94%;
-    height: 94.5%;
-    border: 15px #340000 solid;
-    border-radius: 57px;
+    height: 93.5%;
+    border: 15px solid #861818;
+    border-radius: 40px;
     background-image: url(./assets/atlas\ slot\ machineAsset\ 30filter.svg);
     background-size: 255px 350px;
     background-position: center;
@@ -77,12 +99,14 @@ filter: blur(1px);
     transform: translate(-50%,-50%);
     z-index: 1;
 }
-
+.slots-pre{
+    border:2px solid #FFD655;
+}
 .reel{
     position: relative;
 width:var(--icon-width);
 height: calc(3*var(--icon-height));
-background-image: url(./assets/strip-resized.png);
+background-image: url(./assets/reel-resized.png);
 background-repeat: repeat-y;
 background-position: 0 0;
 }
@@ -99,14 +123,40 @@ background-position: 0 0;
 .reel:nth-of-type(3){
     border-radius: 0 10px 10px 0;
 }
+
 .roll{
-    width:150px;
-    height: 50px;
+    width: 60%;
+    font-weight:bolder;
+    letter-spacing: 2px;
+    height: 80px;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
     text-align: center;
     display: grid;
     place-items: center;
-    background-color: red;
-    margin-bottom:20px;
+    background-color: transparent;
     cursor: pointer;
     transition: .5s ease;
+    background: #340000;
+    border-radius: 25px;
+    /* background-image: url(./assets/atlas\ slot\ machineAsset\ 27button.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    margin-bottom: 20%;
+    color: #FFD655;
+    position: relative;
+    border:none;
+    text-shadow: 0px 0px .8rem #FFD655;
+}
+.roll::after{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    content:'';
+    border:5px solid;
+    border-radius: 25px;
+    /* border-image: url(./assets/atlas\ slot\ machineAsset\ 29frame.svg) 30 10% repeat; */
+    
+
 }
