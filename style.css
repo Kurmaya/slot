@@ -32,6 +32,8 @@ body{
     position:absolute;
     top:3%;
     width:40%;
+    left:50%;
+    transform : translateX(-50%);
     /* height: 100%; */
     /* object-fit: cover; */
     
