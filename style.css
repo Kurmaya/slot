@@ -16,7 +16,7 @@ body{
 }
 .container{
     position: relative;
-    background-image: url(./assets/atlas\ contest\ slot\ screen\ BGArtboard\ 1.png);
+    background-image: url(./assets/background.jpg);
     background-position: top center;
     background-size: cover;
     /* top:50%; */
@@ -30,11 +30,12 @@ body{
 }
 .container img{
     position:absolute;
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    display: none;
+    top:5%;
+    width:40%;
+    /* height: 100%; */
+    /* object-fit: cover; */
+    
+    /* display: none; */
 
 }
 .slots {
@@ -110,7 +111,7 @@ filter: blur(1px);
     position: relative;
 width:var(--icon-width);
 height: calc(3*var(--icon-height));
-background-image: url(./assets/reel-resized.png);
+background-image: url(./assets/new-reel-resized-1.png);
 background-repeat: repeat-y;
 background-position: 0 0;
 }
